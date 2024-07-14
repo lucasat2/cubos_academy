@@ -1,0 +1,40 @@
+               /* GRID INICIO */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  background-color: blue;
+  border: 7px solid red;
+  color: white;
+  padding: 8px;
+}
+
+.box p,
+button {
+  font-size: 35px;
+}
+
+.boxes {
+  height: calc(100vh);
+  position: relative;
+  gap: 10px 10px;
+  /* Gap row e Gap column */
+  display: grid;
+  justify-content: flex-start;
+
+  /*----------------------------------------------------------------------------*/
+
+  /* GRID TEMPLATE */
+
+  /* Forma completa:
+  grid-template-columns: 3fr 1fr 1fr 1fr; 
+
+  grid-template-columns: 3fr repeat(3,1fr); /*Explicação: 3fr = 3 unidades flexiveis ocupadas,repeat(numero de vezes e o que ) */
+
+  /*Tambem pode ser usado: grid-template-rows: 2fr; */
+
+
+}

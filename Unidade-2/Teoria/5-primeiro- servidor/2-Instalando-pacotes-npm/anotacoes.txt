@@ -1,0 +1,5 @@
+Iniciar um servidor npm
+npm init -y
+
+Instalar pacote lodash
+npm i lodash

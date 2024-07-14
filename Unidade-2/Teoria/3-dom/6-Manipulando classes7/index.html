@@ -1,0 +1,38 @@
+
+
+<!-- Atraves do classlist é possivel manipular coisas da classe,
+ que podem ser:
+
+ Remove,add,toogle e contains
+ No exemplo abaixo o toogle é como um inversor , que trocou o display de none 
+ para block na classe escondido.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .escondido {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="escondido">Mensagem muito legal!</p>
+
+    <button type="button" onclick="mostrarEscondido()">Mensagem escondida</button>
+
+    <script>
+      const paragrafo = document.querySelector('p');
+      function mostrarEscondido() {
+        paragrafo.classList.toggle('escondido');
+      }
+    </script>
+  </body>
+
+</html>

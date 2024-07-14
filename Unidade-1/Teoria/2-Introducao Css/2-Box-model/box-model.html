@@ -1,0 +1,69 @@
+
+        <!-- 
+            Box model demonstration
+            
+            https://codepen.io/guyroutledge/full/nOGbyO 
+        
+            Padding - Espaço interno do elemento para o conteudo 
+            Margin - espaço entre os elementos 
+            border - linha em volta do elemento 
+            o body tem sua propria margin.
+    
+        -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>box-model</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="vermelho">
+            ola
+        </div>
+        <div class="verde">
+            ola
+        </div>
+        <div class="azul">
+            ola
+        </div>
+
+
+        <style>
+            body {
+                margin: 0px;
+            }
+
+            div {
+                height: 100px;
+                width: 100px;
+                border: 5px solid black;
+                /*espessura,* tipo, cor */
+                padding: 10px;
+            }
+
+            .vermelho {
+                background-color: red;
+                margin-bottom: 10px;
+
+            }
+
+            .verde {
+                background-color: green;
+                margin-bottom: 10px;
+            }
+
+            .azul {
+                background-color: blue;
+                margin-bottom: 10px;
+            }
+        </style>
+    </body>
+
+</html>

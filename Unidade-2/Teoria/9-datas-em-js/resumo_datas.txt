@@ -1,0 +1,18 @@
+Como criar uma nova data
+
+1. new Date() - agora
+
+2.new Date(numero) - cria a partir de timestamp (milissegundos desde 1970)
+
+DATA A PARTIR DE NUMEROS 
+
+4. new Date(1995, 11, 17, 3, 24, 0) - cria
+data a partir de ano, mês (começa em
+zero), dia, hora, minuto, segundo.
+Tudo a partir do dia é opcional (se não
+for passado, o dia fica 1; o resto fica zero)
+
+
+DATA A PARTIR DE TEXTO (nao recomendado)
+3. new Date("1995-12-17T03:24:00") - cria data a partir de texto, no UTC (fica17/12/95 às 00:24 no nosso fuso)
+

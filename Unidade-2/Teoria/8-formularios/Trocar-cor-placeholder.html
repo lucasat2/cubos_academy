@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <h1>Login</h1>
+
+        <!-- O atributo FOR indica qual input está apontando pelo seu ID -->
+        
+        <div class="input-container">
+            <label for="email">Email</label>
+            <input type="email" name="" id="email" placeholder="Digite seu e-mail">
+        </div>
+
+        <div class="input-container">
+            <label for="senha">Senha</label>
+            <input type="password" name="" id="senha" placeholder="Digite sua senha">
+        </div>
+
+        <button>Enviar</button>
+
+
+
+        <style>
+
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                font-family: sans-serif;
+            }
+
+            .input-container {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+            }
+
+            .input-container label {
+                margin-bottom: 8px;
+            }
+
+            .input-container input {
+                all: unset;
+                padding: 12px 15px;
+                border: 1px solid black;
+                border-radius: 8px;
+            }
+
+            .input-container input::placeholder {
+                color: rgb(209, 209, 209);
+            }
+
+            button {
+                all: unset;
+                width: 300px;
+                background-color: gray;
+                color: white;
+                text-align: center;
+                padding: 12px 0px;
+                border-radius: 8px;
+                cursor: pointer;
+
+            }
+        </style>
+
+
+    </body>
+
+</html>

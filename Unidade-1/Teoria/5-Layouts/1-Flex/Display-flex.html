@@ -1,0 +1,124 @@
+<!-- Introducao
+
+O alinhamento flex permite alinhar flexivelmente os elementos nos dois eixos,
+por padrão eles ficam na horizontal.
+
+Direção do alinhamento:
+
+flex-direction : row (padrao)
+flex-direction: column
+
+
+Alinhar itens no eixo direto (horizontal)
+
+
+justify-content : flex-start
+justify-content : flex-end
+justify-content : space-beetween  - Deixa os itens no inicio e fim da tela 
+justify-content : space-around
+justify-content : space-evenly
+justify-content : center
+
+Alinhar itens no eixo cruzado (vertical)
+
+align-items: flex-start;
+align-items: flex-end;
+align-items: center;
+align-items: stretch(padrao);
+align-items: baseline;
+
+Quebra de linha
+wrap
+no-wrap(padrao)
+ -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+
+        <div class="container">
+
+            <h3>Doces Organicos</h3>
+            <p>Doces com adoçantes organicos limpos e sabores de frutas reais, gomasde ingrediente unico:ashwagandha,vinagre
+                de maça,sabugueiro e acafrão</p>
+
+            <div class="categorias">
+
+                <h4>Categorias</h4>
+
+                <div class="itens">
+                    <p>comida</p>
+                    <p>comida</p>
+                    <p>comida</p>
+                    <p>comida</p>
+                    <p>comida</p>
+                    <p>comida</p>
+                </div>
+
+
+                <button class="btn">Visitar site</button>
+            </div>
+        </div>
+
+        <div>
+
+        </div>
+
+
+        <style>
+            
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                display: flex;
+                justify-content: center;
+                /* min-height: 100vh; */
+            }
+
+            .container {
+
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                border: solid black;
+                padding: 40px 40px;
+
+            }
+
+            .btn {
+
+                all: unset;
+                background-color: black;
+                color: white;
+                border-radius: 10px;
+                padding: 10px 15px;
+                margin-top: 10px;
+            }
+
+            .itens p {
+                display: inline-block;
+                margin-right: 10px;
+                padding: 7px;
+                border-radius: 10px;
+                background-color: rgb(91, 211, 241);
+            }
+        </style>
+
+
+
+    </body>
+
+</html>

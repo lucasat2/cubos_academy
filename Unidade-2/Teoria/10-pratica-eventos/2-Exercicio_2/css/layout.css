@@ -1,0 +1,29 @@
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Quebra de linha das imagens dos animais */
+  .flex-wrap { 
+    flex-wrap: wrap;
+  }
+
+  /* Centralizar imagens dos animais no centro */
+  .justify-center { 
+    justify-content: center;
+  }
+
+  /* Dar um espaço entre o Lorem ipsum e o 'há 1 mes' */
+  .justify-between{ 
+    justify-content: space-between;
+
+  }
+
+  .align-center { 
+    align-items: center;
+  }

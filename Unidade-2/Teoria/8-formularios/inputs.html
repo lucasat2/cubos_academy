@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+  </head>
+
+  <body>
+
+    <form>
+
+      <!-- Inputs diversos  -->
+
+      <!-- Obs: Apenas inputs com o atributo name serão enviados para o banco de dados
+      Onde colocara as informacoes no banco : atributo name 
+      O que colocar : value desse name
+    
+      -->
+
+      <h3>Texto</h3>
+      <input type="text"><br>
+
+      <h3>Radio</h3>
+      <!--Para que apenas uma opção seja selecionada,
+      o parametro name precisa ser igual em todas as opções -->
+      <input type="radio" name="gender" value="op1"> Masculino<br>
+      <input type="radio" name="gender" value="op2"> Feminino<br>
+
+      <h3>Password</h3>
+      <input type="password" name="senha"><br>
+
+      <h3>Checkbox</h3>
+      <input type="checkbox"><br>
+
+      <h3>Number</h3>
+      <input type="number"><br>
+
+      <h3>Reset</h3>
+      <!--Apaga valores preenchidos antes -->
+      <input type="reset" value="limpar"><br>
+
+      <h3>Date</h3>
+      <input type="date" name="Data"><br>
+
+      <h3>Range</h3>
+      <input type="range"><br>
+
+      <h3>Search</h3>
+      <input type="search"><br>
+
+      <h3>Tel</h3>
+      <input type="tel"><br>
+
+      <h3>Email</h3>
+      <input type="email"><br>
+
+      <h3>Time</h3>
+      <input type="time"><br>
+
+      <h3>Week</h3>
+      <input type="week"> <br> <!--mostra a semana tal do ano tal-->
+
+      <h3>Datetime-local</h3>
+      <input type="datetime-local"> <br> <!-- inclui além da data tambem a hora -->
+
+      <h3>Color</h3>
+      <input type="color"> <br>
+
+      <h3>Submit</h3>
+      <!-- Envia as informações , o value é o texto que ficará no botão -->
+      <input type="submit" value="fazer cadastro"> <br>
+
+
+      <h3>Label</h3>
+      <!-- É considerada uma boa prática conectar o label no input através do uso dos atributos for e id.  -->
+      <input type="checkbox" id="box1">
+      <label for="box1">Email</label>
+
+      <input type="checkbox" id="box2">
+      <label for="box2">Push</label>
+
+
+      <h3>Placeholder</h3>
+      <!-- Texto padrão dentro da caixa de texto -->
+      <input type="text" name="nome" placeholder="Digite aqui">
+
+
+      <h3>Select</h3>
+
+      <!-- Atributos possiveis
+      size = o tamanho do select
+      value = texto que ira na url e nao para o usuario
+      selected = valor pré selecionado
+      multiple = para dar a opcao de escolher mais de um e enviar. -->
+
+      <select name="estados">
+        <option value="Rj">Rio de Janeiro</option>
+        <option value="Sp">São Paulo</option>
+        <option value="Mg" selected>Minas Gerais</option>
+      </select> <br><br>
+
+      <!-- Selects tambem tem Label com for e id. -->
+      <label for="cores">Escolha a cor</label> <br>
+      <select name="cores" id="cores">
+        <option value="blu">Azul</option>
+        <option value="red">Vermelho</option>
+        <option value="gre">Verde</option>
+
+      </select>
+
+      <h3>TextArea</h3>
+
+      <!-- Atributos possiveis
+
+      Regular a altura da textarea:
+      colocar um height no css
+
+      Travar a altura não permitindo regulagem:
+      propriedade resize:none  no css 
+
+    -->
+
+      <textarea name="teste" id=""></textarea>
+
+    </form>
+
+    </form>
+
+  </body>
+
+</html>

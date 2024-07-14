@@ -1,0 +1,3 @@
+Esta aula explica o seguinte: 
+Retirar a logica do index e colocar em um arquivo separado(controlador) 
+que exporta pro index 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Olá,mundo</h1>
+            <nav>
+                <h1 class="vermelho">Olá,mundo</h1>
+            </nav>
+        </header>
+
+        <h1>Olá,mundo!</h1>
+        <div>
+
+            <h1>Olá,mundo!</h1>
+        </div>
+
+        <div>
+            <h2>Olá mundo</h2>
+        </div>
+
+
+        <style>
+            /*Descendente direto*/
+            header>h1 {
+                color: green;
+            }
+
+            /*Descentente qualquer*/
+            div h1 {
+                color: purple;
+            }
+
+            /*Ou*/
+            h1,
+            h2 {
+                color: orange;
+            }
+
+
+            /*E*/
+            h1.vermelho {
+                color: red;
+
+            }
+        </style>
+
+
+
+    </body>
+
+</html>

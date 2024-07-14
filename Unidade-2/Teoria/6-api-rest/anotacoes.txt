@@ -1,0 +1,115 @@
+                      ANOTACOES API REST
+
+
+Como se organiza uma API REST?
+
+· Coleções de recursos.
+
+· Cada recurso possui um identificador.
+
+· Recursos são representados como JSON.
+
+
+Por exemplo: Uma API de uma biblioteca
+
+Na API temos uma coleção de livros. "Livro" é um recurso nessa API.
+
+Nós também temos uma coleção de autores. Dentro de um autor também
+temos uma coleção de livros.
+
+Livros
+Título
+Editora
+Ano de lançamento
+
+
+Autores
+Nome
+País natal
+
+Livros
+Título
+Editora
+Ano de lançamento
+==========================================================
+
+Recursos possuem identificadores
+
+Também conhecidos como "id".
+Ex: Uma pessoa pode ser identificada pelo seu CPF.
+Ex: Um produto em uma loja é identificado pelo seu código de barras.
+Ex: Um carro é identificado pela sua placa.
+
+Podem ser qualquer coisa, desde que sejam únicos e imutáveis.
+Na dúvida, um recurso pode ser identificado por um "UUID".
+
+UUID = Identificador único universal em
+um formato específico.
+ Exemplos:
+2e3990d1-b01f-47bb-bd10-42cc6e0f40f0
+9ef374a1-2be2-4963-aff0-1677854f1f7b
+==========================================================
+
+Recursos representados como JSON
+
+JSON e uma forma de representar dados em trânsito.
+
+Suporta números, texto, objetos, listas, true/false e null.
+
+"logradouro": "Avenida Murilo Dantas",
+"cep": "49032490",
+"bairro": "Farolândia"
+"cidade": "Aracaju",
+"estado": "SE",
+"estado_info": {
+"area_km2": 21918.5,
+"codigo_ibge": "28",
+"nome": "Sergipe"
+
+"cidade_info": {
+"area_km2": 181.8,
+"codigo_ibge": "2800308"
+
+
+Em toda coleção nós podemos:
+
+Listar os recursos contidos nesta coleção
+GET /livros
+
+Ver um recurso dentro da coleção
+GET /livros/37
+
+Adicionar um novo recurso na coleção
+POST /livros
+
+Sobrescrever ou criar um recursos
+PUT /livros/37
+
+Editar um recurso dentro da coleção
+PATCH /livros/37
+
+Excluir um recurso
+DELETE /livros/37
+==========================================================
+
+Exemplo: API REST da biblioteca
+GET /livros
+GET /livros/:id
+POST /livros
+PUT /livros/:id
+PATCH /livros/:id
+DELETE /livros
+
+GET /autores
+GET /autores/:id
+POST /autores
+PUT /autores/:id
+PATCH /autores/:id
+DELETE /autores
+
+GET /autores/:idautor/livros
+GET /autores/:idautor/livros/:id
+POST /autores/:idautor/livros
+PUT /autores/:idautor/livros/:id
+PATCH /autores/:idautor/livros/:id
+DELETE /autores/:idautor/livros

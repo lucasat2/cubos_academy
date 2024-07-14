@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+            <header>Cabecalho</header>
+
+            <div class="container">
+                
+                <main>principal</main>
+                <aside>anuncios</aside>
+                
+            </div>
+            
+            <footer>rodape</footer>
+
+
+            <style>
+
+        body{
+
+            font-size: 200%;
+            margin: 0px;
+            display: flex;
+            flex-direction: column; /*Para os itens se direcionarem na vertical*/
+            min-height: 100vh; /*Para o body ocupar o espaço todo da tela*/
+        }
+
+        header,main,aside,footer{
+            text-align: center;
+            color: white;
+            
+        }
+
+        header,footer{
+            background-color: royalblue;
+        }
+
+        main{
+            background-color: palevioletred;
+            flex-grow: 1; /*Fazer com que o conteudo pricipal ocupe mais espaço*/
+        }
+
+        aside{
+            background-color: peachpuff;
+            flex-basis: 300px; /*Caso o principal diminua o aside adapta o tamanho*/
+            color: black;
+        }
+
+        .container { 
+            display: flex;
+            flex-grow: 1;
+
+            
+        }
+
+        /* Alinhar na horizontal e vertical */
+        main,aside{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+    
+</body>
+</html>

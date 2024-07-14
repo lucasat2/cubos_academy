@@ -1,0 +1,28 @@
+ Ordem de criacao das coisas 
+
+ criacao do menu lateral com aside 
+ criacao do main
+ colocar os elementos dentro de um botao no aside
+  imagens closed menu
+  home
+  favoritos
+  configuracoes
+Colocar o titulo h1 Inicio na tag main 
+criar uma div com classe ''gallery'''
+criar uma outra div dentro com class ''item''
+criar uma img dentro apontando para a primeira imagem da galeria 
+colocar 2 divs spam abaixo da imagem com os textos lorem ipsum e há 1 mes.
+replicar mais 9 vezes a partir da div item 
+
+
+Estilizar o menu lateral preto 
+background color: #3133131
+display:flex;
+flex-direction:column
+
+Criar uma classe flex-column com as propriedades flex
+
+ 
+
+
+-->

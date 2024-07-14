@@ -1,0 +1,29 @@
+O display é responsavel por posicionar os elementos na tela
+
+
+display: block  
+
+- ocupa toda a area da pagina , Pula uma linha para o proximo elemento
+- o display block permite definir um width para regular o tamanho
+
+    
+
+display: inline 
+
+- Mantem na mesma linha o elemento . Exemplo : span
+- o display inline não permite ajustar largura e altura.
+    
+    
+display: inline -block 
+
+- Significa tudo na mesma linha. Permite alterar as dimensões do elemento
+- Permite mais de um elemento na mesma linha lado a lado
+- Não pode ter div dentro de paragrafo nem paragrafo dentro de outro paragrafo, pois ocorre uma quebra do fluxo do display block
+
+
+vertical-align:top  Alinha os elementos de um um inline block no topo.
+
+
+Como alinhar um elemento display: inline ou inline block?
+
+R: text-align: center

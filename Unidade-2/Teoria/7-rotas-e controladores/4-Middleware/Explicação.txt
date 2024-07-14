@@ -1,0 +1,27 @@
+Logica : 
+Antes de chegar a um controlador, a requisicao passa por um INTERMEDIADOR. 
+
+PASSO 1 - LIGAR O PROJETO 
+npx nodemon index.js
+
+
+PASSO 2 CRIAR A FUNCAO USE , PARA ENCAMINHAR OS DADOS PARA O INTERMEDIARIO , no arquivo index.js na raiz.
+
+app.use((req,res,next)=>{
+  console.log("Eu sou o intermediario")
+  console.log(req.method,req.url);
+  //Logica para verificar se nao é o metodo DELETE
+  if(req.method ==='DELETE'){
+    res.send('Não pode');
+  }else{
+    next();
+  }
+});
+
+PASSO 3 - CRIAR UM ARQUIVO intermediarios.js na raiz 
+PASSO 4 - CRIAR A LOGICA DO INTERMEDIARIO PARA COLOCAR UMA SENHA NAS REQUISICOES ,EXCETO NA REQUISICAO GET 
+PASSO 5- TIRAR AS COISAS DO INDEX E JOGAR NO ARQUIVO DE INTERMEDIARIO
+PASSO 6 - EXPORTAR AS FUNCOES.
+PASSO 7 - IMPORTAR NO ARQUIVO INDEX.JS
+
+

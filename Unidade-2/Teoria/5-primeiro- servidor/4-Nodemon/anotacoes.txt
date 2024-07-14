@@ -1,0 +1,5 @@
+npm i nodemon
+
+O nodemon serve para que toda vez que modificarmos o servidor , não ter que desligar e ligar de novo no terminal.
+
+npx nodemon index.js

@@ -1,0 +1,43 @@
+<!-- 
+
+RECOMENDACAO DE MUSICA 
+
+Seu objetivo é criar um formulário de cadastro com os seguintes campos:
+
+· Genéro músical (elemento <select> com pelo menos 3 <option> )
+. Música (elemento <input type="text"> com display: none )
+
+Comportamentos esperados:
+
+· O campo "genêro músical" é obrigatório
+· O campo "música" deverá ser preenchido a partir do campo "genêro músical" escolhido pelo usuário
+· Você pode colocar 1 música fixa por genêro ou criar uma lista de músicas e escolher uma aleatória por genêro
+· O formulário deverá ser submetido a seguinte URL "https://www.google.com/search" utilizando o método HTTP GET e enviando como
+valor do parametro de query "q" o valor que estiver no campo "mūsica"
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Recomendacao de musica</title>
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <form action ="https://www.google.com/search" target="_blank">
+      <select name="Genero Musical">
+        <option value="Billie Jean">Pop</option>
+        <option value="Fear of the Dark">Metal</option>
+        <option value="Hard Times">Rock</option>
+      </select>
+   <input type="text" name ="q">
+   <button type="submit">Pesquisar</button>
+    </form>
+
+  </body>
+
+</html>

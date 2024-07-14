@@ -1,0 +1,29 @@
+const express = require('express');
+const app = express();
+
+const listadeInstrutores = [
+  {
+    id: 1,
+    nome: "Junior",
+    idade: 29,
+    areaDeAtuacao: "Logica",
+  },
+  {
+    id: 2,
+    nome: "Dina",
+    idade: 19,
+    areaDeAtuacao: "Back-end",
+  },
+  {
+    id: 3,
+    nome: "Guido Cerqueira",
+    idade: 30,
+    areaDeAtuacao: "Full-stack",
+  },
+  {
+    id: 4,
+    nome: "Victor Magalhaes",
+    idade: 28,
+    areaDeAtuacao: "Front-end",
+  },
+];

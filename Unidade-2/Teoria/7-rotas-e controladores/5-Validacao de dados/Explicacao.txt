@@ -1,0 +1,45 @@
+Nesta aula faremos o tratamento de dados para verificar se os arquivos enviadosa pela API estão corretos 
+
+================================================================================
+
+PASSO 1 - TRATAR ERRO NA CONSULTA DE UM INSTRUTOR 
+ENTRAR EM CONTROLADORES / INSTRUTORES E CRIAR A LOGICA 
+ 
+  if (!instrutor) { 
+    res.status(404);
+    res.json({ erro: "instrutor " + req.params.idConsultado + "não existe." });
+    return;
+  }
+================================================================================
+  PASSO 2 - TRATAR ERRO NA CRIACAO DE UM INSTRUTOR
+
+//Tratamento de erro - Verificar se algo foi preenchido
+  if (!req.body.nome) { 
+    res.status(400)
+    res.json({ erro: "O campo 'nome' é obrigatório" });
+    return;
+  }
+
+  if (!req.body.idade) {
+    res.status(400)
+    res.json({ erro: "O campo 'idade' é obrigatório" });
+    return;
+  }
+
+  if (!req.body.areaDeAtuacao) {
+    res.status(400)
+    res.json({ erro: "O campo 'Area de Atuação' é obrigatório" });
+    return;
+  }
+
+  if (!req.body.nome) {
+    res.status(400)
+    res.json({ erro: "O campo 'nome' é obrigatório" });
+    return;
+  }
+// Tratamento de erro para que o nome seja preenchido com um texto.
+  if (typeof req.body.nome != "string") { 
+    res.status(400);
+    res.json({ erro: "O campo 'nome'deve ser preenchido com um texto" });
+  }
+================================================================================
