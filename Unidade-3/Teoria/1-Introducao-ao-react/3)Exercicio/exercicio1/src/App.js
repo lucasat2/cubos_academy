@@ -1,23 +1,29 @@
 
-import './App.css';
+function Card(id, children) {
+  return (
+    <div className="card">
+      < img src={`https://picsum.photos/id/${id}/200/300`} alt="" />
+      {children}
+    </div>
+  )
+}
 
 function App() {
+
+  const cards = [
+    { id: 239, texto: 'Card 1' },
+    { id: 240, texto: 'Card 2' },
+    { id: 241, texto: 'Card 3' },
+    { id: 242, texto: 'Card 4' },
+  ]
+
   return (
     <div className="App">
-      <div className="card">
-        <img src="https://picsum.photos/id/239/200/300" alt=""/>
-          Card 1
-      </div>
-      <div className="card">
-        <img src="https://picsum.photos/id/240/200/300" alt=""/>
-          Card 2
-      </div>
-      <div className="card">
-        <img src="https://picsum.photos/id/241/200/300" alt=""/>
-          Card 3
-      </div>
+      {cards.map(function (card) {
+        return <Card id={card.id}>{card.texto}</Card>
+      })}
     </div>
- );
+  );
 }
 
 export default App;
